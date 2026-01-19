@@ -77,8 +77,6 @@ header {
 
 .banner {
 
-    width: 100%;
-    max-width: 1250px;
     height: 750px;
     padding-left: 110px;
     align-items: center;
@@ -147,14 +145,14 @@ header {
 
 }
 
-.About {
+.About,
+.gride {
     background-color: #1A0B2E;
-    padding: 120px auto;
-
+    padding: 120px 200px;
 }
 
 .About-container {
-    width: 1080px;
+    /* width: 1080px; */
     /* border: 1px solid palegreen; */
     text-align: center;
 }
@@ -163,7 +161,7 @@ header {
     color: #FFFFFF;
     font-size: 45px;
     font-weight: bold;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .About-container p {
@@ -176,14 +174,14 @@ header {
 
 .card {
     border: none;
-    width: 1080px;
+
     height: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 50px;
-    margin: 50px auto 0 auto;
+
+    margin-top: 150px;
 
 }
 
@@ -191,7 +189,84 @@ header {
     font-size: 30px;
     color: #00FF88;
 }
-.card p{
+
+.card p {
     font-size: 16px;
     color: #FFFFFF;
+}
+
+
+.gride-container {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.gride-container h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.gride-card {
+
+    border: none;
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.gride-card-container {
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #351165;
+    align-items: center;
+   
+
+}
+
+.gride-card-container h3 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.gride-card-container p {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.gride-card-container img {
+    height: 80px;
+    width: 60px;
+}
+
+#hp {
+    grid-row: span 2;
+
+}
+
+#device {
+    grid-column: span 2;
+
+}
+
+#location {
+    grid-column: span 2;
+
+}
+
+#msg {
+    grid-column: span 2;
+}
+
+#resource {
+    grid-row: span 1;
+
 }
