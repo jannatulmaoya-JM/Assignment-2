@@ -80,7 +80,7 @@ header {
     height: 750px;
     padding-left: 110px;
     align-items: center;
-    background-image: url(/assets/hero-bg.png);
+    background-image: url(../assets/hero-bg.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@ header {
 }
 
 .banner-container .img-icon {
-    background-image: url(/assets/hero-circle.png);
+    background-image: url(../assets/hero-circle.png);
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
