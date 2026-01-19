@@ -13,6 +13,7 @@
 .container {
     max-width: 1250px;
     margin: auto;
+
 }
 
 header {
@@ -29,7 +30,7 @@ header {
 
 }
 
-nav h2 {
+.nav-container h2 {
     color: #FFFFFF;
     font-size: 45px;
     font-weight: bold;
@@ -54,12 +55,143 @@ nav h2 {
     color: rgb(233, 2, 253);
 }
 
-.btn{
-   padding: 10px 45px; 
-   color: #FFFFFF;
-   border:none;
-   border-radius: 30px;
-   background-color: rgb(233, 2, 253);
-   font-size: 20px;
-   font-weight: 600;
+.btn {
+    padding: 10px 45px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(233, 2, 253);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-2 {
+    padding: 10px 45px;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    border-radius: 30px;
+    background-color: #2A186C;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.banner {
+
+    width: 100%;
+    max-width: 1250px;
+    height: 750px;
+    padding-left: 110px;
+    align-items: center;
+    background-image: url(/assets/hero-bg.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.banner-container {
+    width: 550px;
+    height: 560px;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.banner-container .img-icon {
+    background-image: url(/assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    width: 350px;
+    height: 350px;
+
+}
+
+.banner-container h4 {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #00FF88;
+    font-size: 16px;
+    color: #FFFFFF;
+
+}
+
+.banner-container h4::before {
+    position: absolute;
+    z-index: -10;
+
+}
+
+.img-icon img {
+    margin: 80px;
+
+}
+
+.banner-container h2 {
+    color: #FFFFFF;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.banner-container p {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 20px 0px;
+
+}
+
+.About {
+    background-color: #1A0B2E;
+    padding: 120px auto;
+
+}
+
+.About-container {
+    width: 1080px;
+    /* border: 1px solid palegreen; */
+    text-align: center;
+}
+
+.About-container h2 {
+    color: #FFFFFF;
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.About-container p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+
+}
+
+.card {
+    border: none;
+    width: 1080px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin: 50px auto 0 auto;
+
+}
+
+.card h4 {
+    font-size: 30px;
+    color: #00FF88;
+}
+.card p{
+    font-size: 16px;
+    color: #FFFFFF;
 }
