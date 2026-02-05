@@ -118,30 +118,29 @@ header {
 }
 
 .box {
-    /* width: 350px; */
     position: absolute;
-
 }
 
 .mcp {
     z-index: 10;
     top: 260px;
-    right: 610px;
+    right: 590px;
 
 }
 
 .hcp {
     top: 180px;
-    left: 500px;
+    left: 480px;
 }
 
 @keyframes base {
     from {
-        bottom: 0px;
+        top: -1px;
     }
 
     to {
-        top: 30px;
+        bottom: 1px;
+
     }
 }
 
@@ -348,6 +347,10 @@ header {
     padding: 20px;
 }
 
+.icon {
+    color: red;
+}
+
 .hero-cd iframe {
     width: 235px;
 }
@@ -457,6 +460,9 @@ header {
 .button {
     display: block;
 }
+.menu{
+    display:none;
+}
 
 @media screen and (max-width:576PX) {
     .container {
@@ -478,12 +484,16 @@ header {
         display: none;
     }
 
+    .menu {
+        display: block;
+    }
+
     .page-container {
         display: none;
 
     }
 
-    .nav-container menu {
+    .nav-container .menu {
         height: 10px;
         width: 10px;
         display: flex;
@@ -583,7 +593,7 @@ header {
         }
 
         to {
-            top: 30px;
+            top: 3px;
         }
     }
 
@@ -706,5 +716,10 @@ header {
 
     .footer-copy {
         font-size: 15px;
+    }
+
+    .menu i {
+        color: red;
+        margin-left: -30px;
     }
 }
